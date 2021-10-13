@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chess_Club" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titleScreen" translatesAutoresizingMaskIntoConstraints="NO" id="jsg-1x-1cm">
+                                <rect key="frame" x="90" y="322" width="210" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="FmX-oT-4gG"/>
+                                    <constraint firstAttribute="width" constant="210" id="qvc-he-e8M"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5u-9u-XHh">
+                                <rect key="frame" x="60" y="580" width="115" height="63"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="115" id="RZF-Yv-oIy"/>
+                                    <constraint firstAttribute="height" constant="63" id="jrh-7z-0T5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="19"/>
+                                <state key="normal" title="Play Local">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eGQ-oF-BAB" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="CTN-9S-z8x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkH-cH-73c">
+                                <rect key="frame" x="219" y="580" width="115" height="63"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="t8N-xw-ZUs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="115" id="w9J-0s-zxD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="19"/>
+                                <state key="normal" title="Play Online">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="s79-WJ-7fT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="lNh-ca-U2B"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chess Club" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKn-Q9-Rmw">
+                                <rect key="frame" x="104" y="243.33333333333334" width="182" height="45.666666666666657"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vKn-Q9-Rmw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6Kr-EA-Sxc"/>
+                            <constraint firstItem="X5u-9u-XHh" firstAttribute="top" secondItem="jsg-1x-1cm" secondAttribute="bottom" constant="48" id="Anm-nn-SIe"/>
+                            <constraint firstItem="jsg-1x-1cm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CSs-tC-XNm"/>
+                            <constraint firstItem="X5u-9u-XHh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Hv8-XV-jP7"/>
+                            <constraint firstItem="ZkH-cH-73c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="X5u-9u-XHh" secondAttribute="trailing" constant="8" symbolic="YES" id="Nhs-xe-yI7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZkH-cH-73c" secondAttribute="trailing" constant="56" id="eI1-Ly-lKq"/>
+                            <constraint firstItem="ZkH-cH-73c" firstAttribute="top" secondItem="jsg-1x-1cm" secondAttribute="bottom" constant="48" id="eRi-He-0yq"/>
+                            <constraint firstItem="jsg-1x-1cm" firstAttribute="top" secondItem="vKn-Q9-Rmw" secondAttribute="bottom" constant="33" id="ebM-qH-VVV"/>
+                            <constraint firstItem="jsg-1x-1cm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="g0F-jp-pIV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bda-1M-PlB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839.1304347826087" y="77.678571428571431"/>
+        </scene>
+        <!--Board View Controller-->
+        <scene sceneID="Sax-BF-q6g">
+            <objects>
+                <viewController id="eGQ-oF-BAB" customClass="BoardViewController" customModule="Chess_Club" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gXY-vE-1az">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chessBoard" translatesAutoresizingMaskIntoConstraints="NO" id="pMC-d0-vKu">
+                                <rect key="frame" x="0.0" y="232" width="390" height="390"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pMC-d0-vKu" secondAttribute="height" multiplier="1:1" id="V8x-8f-efB"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHE-Ot-S3E" customClass="Board" customModule="Chess_Club" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="232" width="390" height="390"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hHE-Ot-S3E" secondAttribute="height" multiplier="1:1" id="5K3-24-ir6"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="White" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="BL3-sP-o47">
+                                <rect key="frame" x="16" y="646" width="181" height="32.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="181" id="VHq-6N-JEh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="bzr-aR-k0A">
+                                <rect key="frame" x="193" y="178" width="181" height="32.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="181" id="DhJ-Lp-v99"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQD-TA-mWP">
+                                <rect key="frame" x="150.66666666666666" y="44" width="89" height="30"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="  Quit Game  ">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="endGame:" destination="eGQ-oF-BAB" eventType="touchUpInside" id="EoI-zs-TZU"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="aTv-I1-hKP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9WJ-eB-1gX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pMC-d0-vKu" firstAttribute="width" secondItem="gXY-vE-1az" secondAttribute="width" id="5s7-aB-KuC"/>
+                            <constraint firstItem="9WJ-eB-1gX" firstAttribute="trailing" secondItem="hHE-Ot-S3E" secondAttribute="trailing" id="IWA-eY-ASO"/>
+                            <constraint firstItem="9WJ-eB-1gX" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bzr-aR-k0A" secondAttribute="trailing" id="JUO-ps-lcn"/>
+                            <constraint firstItem="9WJ-eB-1gX" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BL3-sP-o47" secondAttribute="trailing" symbolic="YES" id="LhH-YV-1Y2"/>
+                            <constraint firstItem="FQD-TA-mWP" firstAttribute="centerX" secondItem="9WJ-eB-1gX" secondAttribute="centerX" id="QWX-VW-D65"/>
+                            <constraint firstItem="pMC-d0-vKu" firstAttribute="leading" secondItem="9WJ-eB-1gX" secondAttribute="leading" id="R55-5a-lo3"/>
+                            <constraint firstItem="hHE-Ot-S3E" firstAttribute="top" secondItem="bzr-aR-k0A" secondAttribute="bottom" constant="21.333333333333343" id="UFf-6F-4I4"/>
+                            <constraint firstItem="hHE-Ot-S3E" firstAttribute="top" secondItem="pMC-d0-vKu" secondAttribute="top" id="by3-H0-6mj"/>
+                            <constraint firstItem="FQD-TA-mWP" firstAttribute="top" secondItem="9WJ-eB-1gX" secondAttribute="top" id="e72-ce-paw"/>
+                            <constraint firstItem="hHE-Ot-S3E" firstAttribute="leading" secondItem="9WJ-eB-1gX" secondAttribute="leading" id="ecC-1m-H00"/>
+                            <constraint firstItem="bzr-aR-k0A" firstAttribute="leading" secondItem="9WJ-eB-1gX" secondAttribute="leading" constant="193" id="hGW-PS-pfj"/>
+                            <constraint firstItem="hHE-Ot-S3E" firstAttribute="width" secondItem="gXY-vE-1az" secondAttribute="width" id="kEF-oX-pK3"/>
+                            <constraint firstItem="BL3-sP-o47" firstAttribute="top" secondItem="hHE-Ot-S3E" secondAttribute="bottom" constant="24" id="ogK-aT-JzQ"/>
+                            <constraint firstItem="9WJ-eB-1gX" firstAttribute="trailing" secondItem="pMC-d0-vKu" secondAttribute="trailing" id="ogM-yi-ahW"/>
+                            <constraint firstItem="pMC-d0-vKu" firstAttribute="centerY" secondItem="9WJ-eB-1gX" secondAttribute="centerY" id="ppx-2G-gmD"/>
+                            <constraint firstItem="BL3-sP-o47" firstAttribute="leading" secondItem="9WJ-eB-1gX" secondAttribute="leading" constant="16" id="thx-tf-XtM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DU9-dx-zhv"/>
+                    <connections>
+                        <outlet property="myBoard" destination="hHE-Ot-S3E" id="MRg-of-adM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jeE-he-pSR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2641.5384615384614" y="77.488151658767762"/>
+        </scene>
+        <!--Online View Controller-->
+        <scene sceneID="ua9-aQ-x6h">
+            <objects>
+                <viewController id="s79-WJ-7fT" customClass="OnlineViewController" customModule="Chess_Club" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QM8-dN-TOv">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEg-Y1-QL1">
+                                <rect key="frame" x="150.66666666666666" y="44" width="89" height="30"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="  Quit Game  ">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="dtX-YG-Ara"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chessBoard" translatesAutoresizingMaskIntoConstraints="NO" id="SWy-ed-ad4">
+                                <rect key="frame" x="0.0" y="232" width="390" height="390"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZf-gu-2sK" customClass="Board" customModule="Chess_Club" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="232" width="390" height="390"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xZf-gu-2sK" secondAttribute="height" multiplier="1:1" id="iwc-q6-Lpw"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="4B8-KD-BM1">
+                                <rect key="frame" x="192" y="171.66666666666666" width="182" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="182" id="0aD-yy-IQI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="White" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="bLs-GL-L8l">
+                                <rect key="frame" x="16" y="646" width="197" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="197" id="PMa-Xk-0Oc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n5B-ac-O6J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SWy-ed-ad4" firstAttribute="width" secondItem="QM8-dN-TOv" secondAttribute="width" id="0I3-yr-c0c"/>
+                            <constraint firstItem="SWy-ed-ad4" firstAttribute="leading" secondItem="n5B-ac-O6J" secondAttribute="leading" id="8Wn-hD-klc"/>
+                            <constraint firstItem="n5B-ac-O6J" firstAttribute="trailing" secondItem="bLs-GL-L8l" secondAttribute="trailing" constant="177" id="Gsu-xm-qnS"/>
+                            <constraint firstItem="bLs-GL-L8l" firstAttribute="top" secondItem="xZf-gu-2sK" secondAttribute="bottom" constant="24" id="MEd-gz-u88"/>
+                            <constraint firstItem="bLs-GL-L8l" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="n5B-ac-O6J" secondAttribute="leading" id="N8r-lq-SMp"/>
+                            <constraint firstItem="xZf-gu-2sK" firstAttribute="leading" secondItem="n5B-ac-O6J" secondAttribute="leading" id="NBc-Sk-A86"/>
+                            <constraint firstItem="4B8-KD-BM1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="n5B-ac-O6J" secondAttribute="leading" symbolic="YES" id="QAy-ee-Clx"/>
+                            <constraint firstItem="n5B-ac-O6J" firstAttribute="trailing" secondItem="4B8-KD-BM1" secondAttribute="trailing" constant="16" id="Ssk-w8-YCR"/>
+                            <constraint firstItem="n5B-ac-O6J" firstAttribute="trailing" secondItem="SWy-ed-ad4" secondAttribute="trailing" id="a0j-6h-YFM"/>
+                            <constraint firstItem="xZf-gu-2sK" firstAttribute="top" secondItem="4B8-KD-BM1" secondAttribute="bottom" constant="27.333333333333343" id="bHG-in-kCX"/>
+                            <constraint firstItem="xZf-gu-2sK" firstAttribute="centerY" secondItem="n5B-ac-O6J" secondAttribute="centerY" id="dGy-b4-nG9"/>
+                            <constraint firstItem="n5B-ac-O6J" firstAttribute="trailing" secondItem="xZf-gu-2sK" secondAttribute="trailing" id="ia5-wg-ISx"/>
+                            <constraint firstItem="SWy-ed-ad4" firstAttribute="centerY" secondItem="n5B-ac-O6J" secondAttribute="centerY" id="m1P-wP-ZLs"/>
+                            <constraint firstItem="SWy-ed-ad4" firstAttribute="height" secondItem="QM8-dN-TOv" secondAttribute="height" multiplier="0.462085" id="mz0-Kg-OtS"/>
+                            <constraint firstItem="wEg-Y1-QL1" firstAttribute="centerX" secondItem="n5B-ac-O6J" secondAttribute="centerX" id="rOe-BD-CRb"/>
+                            <constraint firstItem="wEg-Y1-QL1" firstAttribute="top" secondItem="n5B-ac-O6J" secondAttribute="top" id="sVq-Bx-pDT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eNn-uM-kjp"/>
+                    <connections>
+                        <outlet property="onlineBoard" destination="xZf-gu-2sK" id="9jb-vw-vMV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZGR-hd-DMr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3441.5384615384614" y="76.777251184834114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BYX-3y-f07">
+            <objects>
+                <navigationController storyboardIdentifier="0" automaticallyAdjustsScrollViewInsets="NO" id="vAr-d2-qGm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ola-jc-CIQ">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0E8-fc-Dxu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dsv-ME-olp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dtX-YG-Ara"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="chessBoard" width="166" height="166"/>
+        <image name="titleScreen" width="306" height="306"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
