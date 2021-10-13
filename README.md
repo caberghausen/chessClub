@@ -8,6 +8,8 @@ All game logic is contained in [Board.swift](https://github.com/caberghausen/che
 
 ## Checkmate
 
+<img src = "./Checkmate.gif" alt="Checkmate example" height="900px"/>
+
 ## Discovered check
 
 ## Pawn movement
