@@ -24,7 +24,7 @@ All game logic is contained in [Board.swift](https://github.com/caberghausen/che
 
 Cross-device play was a reach goal that was close to functionality using socket.io for Swift, running two XCode simulators at once, and running a node.js on localhost via terminal. It has bugs with switching turns on each device and I did not take time to perfect it because I think the local play game mode by itself is quite cool. However, in the remote chance you have Xcode installed, wanted to clone this repo, and wanted to see it in action, here are the instructions:
 
-1. Open <Chess Club.xcodeproj> in the ChessClub folder because this will take a second to load the socketIO dependencies
+1. Open Chess Club.xcodeproj in the ChessClub folder because this will take a second to load the socketIO dependencies
 
 2. You'll need Node.js and npm installed - I had them installed from taking cse330 but you can install both of them simultaneously at https://nodejs.org/en/download/ 
 
